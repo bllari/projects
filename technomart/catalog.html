@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="upper-panel">
+      <div class="upper-panel-wrapper container">
+        <a href="#" class="upper-panel__logo">Техномарт</a>
+        <form class="upper-panel__form" action="index.html" method="post">
+          <input type="search" name="search" id="search" placeholder="Поиск:">
+          <button type="submit">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
+            	 height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve" fill="#fff">
+            <g>
+            	<path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
+            		C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
+            		C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/>
+            </g>
+            </svg>
+          </button>
+          <label for="search" class="visually-hidden">Поиск</label>
+        </form>
+        <a href="#" class="upper-panel__link upper-panel--markers">Закладки: 0</a>
+        <a href="#" class="upper-panel__link upper-panel--cart">Корзина: 0</a>
+        <a href="#" class="upper-panel__link upper-panel--order">Оформить заказ</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="middle-panel">
+        <p class="middle-panel__about">Интернет-магазин строительных материалов <br> и инструментов для ремонта</p>
+        <div class="middle-panel__contacts">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <address>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </address>
+        </div>
+        <div class="middle-panel__userblock">
+          <a href="#" class="userblock-link userblock-enter">Войти</a>
+          <a href="#" class="userblock-link userblock-reg">Регистрация</a>
+        </div>
+      </div>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="promo container">
+      <div class="promo__column-left">
+        <section class="promo__item promo__item--materials promo-item-new">
+          <h2>Материалы</h2>
+          <a href="#" class="promo__item-link">На любой вкус</a>
+        </section>
+        <section class="promo__item promo__item--tools">
+          <h2>Инструмент</h2>
+          <a href="#" class="promo__item-link">На все случаи</a>
+        </section>
+        <div class="slider-wrapper">
+          <section class="promo__slider">
+            <div class="slider slider-slide1">
+              <h2>Перфораторы</h2>
+              <p>Настоящие мужские игрушки</p>
+              <a href="#" class="slider-btn">Открыть каталог</a>
+            </div>
+            <div class="slider slider-slide2">
+              <h2>Дрели</h2>
+              <p>Соседям на радость!</p>
+              <a href="#" class="slider-btn">Открыть каталог</a>
+            </div>
+          </section>
+          <div class="slider__controls"></div>
+        </div>
+      </div>
+      <div class="promo__column-right">
+        <section class="promo__item promo__item--technics">
+          <h2>Техника</h2>
+          <a href="#" class="promo__item-link">Для стройки</a>
+        </section>
+        <section class="promo__item promo__item--sale">
+          <h2>Скидки 50%</h2>
+          <a href="#" class="promo__item-link">На 350 товаров</a>
+        </section>
+        <section class="promo__item promo__item--delivery">
+          <h2>Доставка</h2>
+          <a href="#" class="promo__item-link">Бесплатно</a>
+        </section>
+      </div>
+    </section>
+    <section class="products container">
+      <div class="block__title">
+        <h2>Популярные товары:</h2>
+        <a href="#" class="title__btn">Все популярные товары</a>
+      </div>
+      <div class="products__items">
+        <section class="product__item">
+          <div class="item__actions">
+            <a href="#" class="item-btn buy">Купить</a>
+            <a href="#" class="item-btn bookmark">В закладки</a>
+          </div>
+          <div class="item__image">
+            <img src="img/product-photo2.jpg" alt="" width="218" height="168">
+          </div>
+          <h3 class="item__title">Перфоратор BOSCH BFG 9000</h3>
+          <span class="item__discount">32500 Р.</span>
+          <b class="item__price">25500 Р.</b>
+        </section>
+        <section class="product__item promo-item-new">
+          <div class="item__actions">
+            <a href="#" class="item-btn buy">Купить</a>
+            <a href="#" class="item-btn bookmark">В закладки</a>
+          </div>
+          <div class="item__image">
+            <img src="img/product-photo1.jpg" alt="" width="218" height="168">
+          </div>
+          <h3 class="item__title">Перфоратор BOSCH BFG 3000</h3>
+          <span class="item__discount">22 500 Р.</span>
+          <b class="item__price">15 500 Р.</b>
+        </section>
+        <section class="product__item">
+          <div class="item__actions">
+            <a href="#" class="item-btn buy">Купить</a>
+            <a href="#" class="item-btn bookmark">В закладки</a>
+          </div>
+          <div class="item__image">
+            <img src="img/product-photo3.jpg" alt="" width="218" height="168">
+          </div>
+          <h3 class="item__title">Перфоратор BOSCH BFG 3000</h3>
+          <span class="item__discount">22 500 Р.</span>
+          <b class="item__price">15 500 Р.</b>
+        </section>
+        <section class="product__item">
+          <div class="item__actions">
+            <a href="#" class="item-btn buy">Купить</a>
+            <a href="#" class="item-btn bookmark">В закладки</a>
+          </div>
+          <div class="item__image">
+            <img src="img/product-photo4.jpg" alt="" width="218" height="168">
+          </div>
+          <h3 class="item__title">Перфоратор BOSCH BFG 3000</h3>
+          <span class="item__discount">22 500 Р.</span>
+          <b class="item__price">15 500 Р.</b>
+        </section>
+
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+</body>
+
+</html>
