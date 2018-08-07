@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -208,7 +208,8 @@
             </div>
             <div class="services__slide services__slide2" data-slidernav="Гарантия">
               <h3>Гарантия</h3>
-              <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>сгоревший товар на новый. <br>Дом уж восстановите как-нибудь сами.</p>
+              <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>сгоревший товар на новый. <br>Дом уж восстановите как-нибудь
+                сами.</p>
             </div>
             <div class="services__slide services__slide3" data-slidernav="Кредит">
               <h3>Кредит</h3>
@@ -332,8 +333,17 @@
     </form>
   </section>
   <section class="map-popup">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1533510995942" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <button type="button" id="close" class="map-btn-close"><span class="visually-hidden">Закрыть</span></button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1533510995942"
+      width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <button type="button" id="map-close" class="map-btn-close"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+  <section class="cart__popup">
+    <button type="button" id="close-cart" class="cart-btn-close"><span class="visually-hidden">Закрыть</span></button>
+    <b>Товар добавлен в корзину!</b>
+    <div class="cart-wrapper">
+      <a href="#" class="cart-btn cart--submit">Оформить заказ</a>
+      <a href="#" class="cart-btn cart-continue">Продолжить покупки</a>
+    </div>
   </section>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
