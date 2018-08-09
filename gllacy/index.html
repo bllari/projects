@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gllacy</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="main-header container">
+  <div class="header__main-content">
+    <nav class="navigation">
+      <a href="#" class="nav-logo">
+        <img src="img/Logo.svg" alt="GllacyShop" width="154" height="64">
+      </a>
+      <div class="nav-wrapper">
+        <ul class="nav__list nav__list--left-links">
+          <li class="nav__item navigation__item--catalog">
+            <a href="#" class="nav__links nav__links--current"><span>Каталог</span></a>
+            <ul class="dropdown">
+              <li class="dropdown__item"><a href="#" class="dropdown__links dropdown__links--main">Новинки</a></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__links ">Сливочное</a></li>
+              <li class="dropdown__item"><a class="dropdown__links dropdown__links--current ">Щербеты</a></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__links ">Фруктовый лед</a></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__links ">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__links"><span>Доставка и оплата</span></a></li>
+          <li class="nav__item"><a href="#" class="nav__links"><span>О Компании</span></a></li>
+        </ul>
+        <ul class="nav__list nav__list--right-links">
+          <li class="nav__item">
+            <a href="#" class="nav__links nav__links-user nav__links-user--search">
+              <svg class="nav__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
+              	 height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve" fill="#FFFFFF">
+              <g>
+              	<path d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
+              		S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
+              		S11,4.019,11,6.5S8.981,11,6.5,11z"/>
+              </g>
+              </svg>
+            </a>
+            <form action="https://echo.htmlacademy.ru" method="post" class="nav__search">
+              <input type="search" id="product-search" class="nav__input-field" required>
+            </form>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__links nav__links-user nav__links-user--login">
+              <svg class="nav__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve" fill="#FFFFFF">
+              <g>
+              	<polygon points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
+              	<path d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
+              		/>
+              </g>
+              </svg>
+              Вход</a>
+            <form action="https://echo.htmlacademy.ru" method="post" class="nav__form-login">
+              <input type="email" name="email" id="email" class="nav__input-field">
+              <input type="password" name="pass" id="pass" class="nav__input-field">
+              <div class="form-login__links">
+                <button type="submit" class="btn form-login__btn">Войти</button>
+                <a href="#" class="form-link form-login__forget">Забыли пароль?</a>
+                <a href="#" class="form-link form-login__new-reg">Новая регистрация</a>
+              </div>
+            </form>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__links nav__links-user">
+            <svg class="nav__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve" fill="#FFFFFF">
+            <g>
+            	<path d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+            		L17.372,13z"/>
+            	<circle cx="6.984" cy="18" r="2"/>
+            	<circle cx="15.984" cy="18" r="2"/>
+            </g>
+            </svg>
+            Пусто</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="header__secondary-content">
+    <p class="header__parag">С 10 до 20, ежедневно</p>
+    <a href="tel:" class="header__tel">8 812 450-25-25</a>
+  </div>
+</header>
+<main><div class="mydots"></div>
+  <div class="slider">
+    <div class="slide slide1"></div>
+    <div class="slide slide2"></div>
+    <div class="slide slide3"></div>
+  </div>
+
+</main>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+</body>
+</html>
