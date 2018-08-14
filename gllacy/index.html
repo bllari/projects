@@ -34,7 +34,7 @@
           <li class="nav__item"><a href="#" class="nav__links"><span>О Компании</span></a></li>
         </ul>
         <ul class="nav__list nav__list--right-links">
-          <li class="nav__item">
+          <li class="nav__item navigation__item--search">
             <a href="#" class="nav__links nav__links-user nav__links-user--search">
               <svg class="nav__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
               	 height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve" fill="#FFFFFF">
@@ -45,11 +45,11 @@
               </g>
               </svg>
             </a>
-            <form action="https://echo.htmlacademy.ru" method="post" class="nav__search">
-              <input type="search" id="product-search" class="nav__input-field" required>
+            <form action="https://echo.htmlacademy.ru" method="get" class="nav__search">
+              <input type="search" id="product-search" class="nav__input-field nav__input-field--search" required placeholder="Что ищем?">
             </form>
           </li>
-          <li class="nav__item">
+          <li class="nav__item navigation__item--login">
             <a href="#" class="nav__links nav__links-user nav__links-user--login">
               <svg class="nav__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve" fill="#FFFFFF">
@@ -61,12 +61,14 @@
               </svg>
               Вход</a>
             <form action="https://echo.htmlacademy.ru" method="post" class="nav__form-login">
-              <input type="email" name="email" id="email" class="nav__input-field">
-              <input type="password" name="pass" id="pass" class="nav__input-field">
-              <div class="form-login__links">
-                <button type="submit" class="btn form-login__btn">Войти</button>
-                <a href="#" class="form-link form-login__forget">Забыли пароль?</a>
-                <a href="#" class="form-link form-login__new-reg">Новая регистрация</a>
+              <input type="email" name="email" id="email" class="nav__input-field" placeholder="Электронная почта">
+              <input type="password" name="pass" id="pass" class="nav__input-field" placeholder="Пароль">
+              <div class="form-login__submit-section">
+                <button type="submit" class="btn form-login__btn invisible-border">Войти</button>
+                <div class="form-login__links">
+                  <a href="#" class="form-link form-login__forget">Забыли пароль?</a>
+                  <a href="#" class="form-link form-login__new-reg">Новая регистрация</a>
+                </div>
               </div>
             </form>
           </li>
