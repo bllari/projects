@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
 <header class="main-header container">
@@ -21,7 +23,7 @@
       <div class="nav-wrapper">
         <ul class="nav__list nav__list--left-links">
           <li class="nav__item navigation__item--catalog">
-            <a href="#" class="nav__links nav__links--current"><span>Каталог</span></a>
+            <a href="#" class="nav__links"><span>Каталог</span></a>
             <ul class="dropdown">
               <li class="dropdown__item"><a href="#" class="dropdown__links dropdown__links--main">Новинки</a></li>
               <li class="dropdown__item"><a href="#" class="dropdown__links ">Сливочное</a></li>
@@ -127,8 +129,106 @@
     </div>
   </section>
   <section class="products container">
-
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/product1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">310&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/product2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">380&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочно-кофейное с кусочками шоколада</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/product3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">355&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/product4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">415&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочное крем-брюле с карамельной подливкой</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
   </section>
+  <div class="container">
+    <section class="info-block">
+      <h2 class="info-block__caption">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+      <div class="info-block__advantages">
+        <p class="info-block__para">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <p class="info-block__para info-block__para--cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p class="info-block__para info-block__para--listik">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+        <p class="info-block__para info-block__para--gradus">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+      </div>
+  </section>
+  </div>
+  <section class="blog container">
+    <div class="blog__announce">
+      <p class="announce-title">Новое в нашем блоге</p>
+      <a href="#" class="announce-link"><span>10 способов сервировки фруктовых щербетов к столу</span></a>
+    </div>
+    <div class="subscribe">
+      <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="subscribe__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+        <div class="subscribe__mail">
+          <input class="nav__input-field subscribe--input-field" type="email" name="emailaddress" placeholder="Электронная почта" required id="subscribe-mail">
+          <button class="btn sub-btn" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div id="map" class="map">
+    <section class="address-map">
+      <p>Адрес главного офиса и офлайн-магазина:</p>
+      <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+      <p>Для заказов по телефону:</p>
+      <a href="tel:">8 812 450-25-25</a>
+      <p>(с 10 до 20 ежедневно)</p>
+      <a href="#" class="btn">Форма обратной связи</a>
+    </section>
+  </div>
+
+
+
+
+
+
+  <div class="kek"></div>
 </main>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
