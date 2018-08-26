@@ -13,11 +13,11 @@
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
 </head>
-<body>
+<body class="inner-page">
 <header class="main-header container">
   <div class="header__main-content">
     <nav class="navigation">
-      <a href="#" class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <img src="img/Logo.svg" alt="GllacyShop" width="154" height="64">
       </a>
       <div class="nav-wrapper">
@@ -90,6 +90,11 @@
     </nav>
   </div>
   <div class="header__secondary-content">
+    <ul class="crumbs">
+      <li class="crumbs__item"><a href="#" class="crumbs__link">Главная</a></li>
+      <li class="crumbs__item"><a href="#" class="crumbs__link">Каталог</a></li>
+      <li class="crumbs__item"><a class="crumbs__link">Сливочное</a></li>
+    </ul>
     <div class="secondary-content__right">
       <p class="header__parag">С 10 до 20, ежедневно</p>
       <a href="tel:" class="header__tel">8 812 450-25-25</a>
@@ -97,37 +102,45 @@
   </div>
 </header>
 <main>
-  <div class="slider-wrapper container">
-    <div class="mydots"></div>
-    <div class="slider">
-      <div class="slide">
-        <h2 class="slider__caption">Крем-брюле и пломбир с малиновым джемом</h2>
-        <a href="#" class="btn btn-slider">Давайте оба!</a>
-      </div>
-      <div class="slide">
-        <h2 class="slider__caption">Шоколадный пломбир и лимонный сорбет</h2>
-        <a href="#" class="btn btn-slider">Давайте оба!</a>
-      </div>
-      <div class="slide">
-        <h2 class="slider__caption">Пломбир с помадкой и клубничный щербет</h2>
-        <a href="#" class="btn btn-slider">Давайте оба!</a>
-      </div>
-    </div>
-  </div>
-  <section class="stocks container">
-    <div class="stock stock--raspberries">
-      <div class="stock__wrapper">
-        <h3 class="stock__caption">Малинка даром!</h3>
-        <p class="stock__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      </div>
-      <a href="#" class="btn stock--btn">Хочу варенье!</a>
-    </div>
-    <div class="stock stock--chocolate">
-      <div class="stock__wrapper">
-        <h3 class="stock__caption">Шоколадки даром!</h3>
-        <p class="stock__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-      </div>
-      <a href="#" class="btn stock--btn">Хочу шоколадки!</a>
+  <section class="filter container">
+    <h1 class="filter__heading">Сливочное мороженое</h1>
+    <div class="filter-top">
+      <fieldset class="sorter">
+        <legend class="filter__caption">Сортировка:</legend>
+        <select class="sorter__select" name="sorting" id="sorting__rule">
+          <option class="sorter__option" value="popular">по популярности</option>
+          <option class="sorter__option" value="beautiful">по красивости</option>
+          <option class="sorter__option" value="sweet">по сладости</option>
+          <option class="sorter__option" value="sour">по кислости</option>
+        </select>
+      </fieldset>
+      <fieldset class="range-filter">
+        <div class="filter__caption">Цена: 100 руб. - 500 руб.</div>
+        <div class="range-filter__scale">
+          <div class="range-filter__bar"></div>
+        </div>
+        <div class="range-filter__toggle range-filter--toggle-min"></div>
+        <div class="range-filter__toggle range-filter--toggle-max"></div>
+      </fieldset>
+      <fieldset class="fatness">
+        <legend class="filter__caption">Жирность:</legend>
+        <label>
+          <input name="fat-amount" type="radio" value="0">
+          <span>0%</span>
+        </label>
+        <label>
+          <input name="fat-amount" type="radio" value="10">
+          <span>до 10%</span>
+        </label>
+        <label>
+          <input name="fat-amount" type="radio" value="30">
+          <span>до 30%</span>
+        </label>
+        <label>
+          <input name="fat-amount" type="radio" value="31">
+          <span>выше 30%</span>
+        </label>
+      </fieldset>
     </div>
   </section>
   <section class="products container">
@@ -188,46 +201,7 @@
       </div>
     </div>
   </section>
-  <div class="container">
-    <section class="info-block">
-      <h2 class="info-block__caption">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-      <div class="info-block__advantages">
-        <p class="info-block__para">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p class="info-block__para info-block__para--cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p class="info-block__para info-block__para--listik">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
-        <p class="info-block__para info-block__para--gradus">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-      </div>
-  </section>
-  </div>
-  <section class="blog container">
-    <div class="blog__announce">
-      <p class="announce-title">Новое в нашем блоге</p>
-      <a href="#" class="announce-link"><span>10 способов сервировки фруктовых щербетов к столу</span></a>
-    </div>
-    <div class="subscribe">
-      <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="subscribe__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <div class="subscribe__mail">
-          <input class="nav__input-field subscribe--input-field" type="email" name="emailaddress" placeholder="Электронная почта" required id="subscribe-mail">
-          <button class="btn sub-btn" type="submit">Отправить</button>
-        </div>
-      </form>
-    </div>
-  </section>
-  <div id="map" class="map">
-    <div class="container">
-      <section class="address-map">
-        <div class="address-wrapper">
-          <p class="address-map__caption">Адрес главного офиса и&nbsp;офлайн-магазина:</p>
-          <p class="address-map__prg">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-        </div>
-        <p class="address-map__caption">Для заказов по телефону:</p>
-        <a href="tel:+78124502525" class="address-map__prg">8 812 450-25-25</a>
-        <p class="address-map__caption">(с 10 до 20 ежедневно)</p>
-        <a href="#" class="btn address-btn">Форма обратной связи</a>
-      </section>
-    </div>
-  </div>
+
 </main>
 <footer class="main-footer container">
   <section class="social">
