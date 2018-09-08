@@ -23,11 +23,11 @@
       <div class="nav-wrapper">
         <ul class="nav__list nav__list--left-links">
           <li class="nav__item navigation__item--catalog">
-            <a href="#" class="nav__links"><span>Каталог</span></a>
+            <a href="#" class="nav__links nav__links--current"><span>Каталог</span></a>
             <ul class="dropdown">
               <li class="dropdown__item"><a href="#" class="dropdown__links dropdown__links--main">Новинки</a></li>
-              <li class="dropdown__item"><a href="#" class="dropdown__links ">Сливочное</a></li>
-              <li class="dropdown__item"><a class="dropdown__links dropdown__links--current ">Щербеты</a></li>
+              <li class="dropdown__item"><a class="dropdown__links dropdown__links--current">Сливочное</a></li>
+              <li class="dropdown__item"><a href="#" class="dropdown__links ">Щербеты</a></li>
               <li class="dropdown__item"><a href="#" class="dropdown__links ">Фруктовый лед</a></li>
               <li class="dropdown__item"><a href="#" class="dropdown__links ">Мелорин</a></li>
             </ul>
@@ -74,17 +74,17 @@
               </div>
             </form>
           </li>
-          <li class="nav__item"><a href="#" class="nav__links nav__links-user">
-            <svg class="nav__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve" fill="#FFFFFF">
-            <g>
-            	<path d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
-            		L17.372,13z"/>
-            	<circle cx="6.984" cy="18" r="2"/>
-            	<circle cx="15.984" cy="18" r="2"/>
-            </g>
+          <li class="nav__item"><a href="#" class="nav__links nav__links-user nav__links-user--p">
+            <svg class="nav__icon" x="0px" y="0px"
+            	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+            <polygon fill="#E84D37" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
+            <circle fill="#343434" cx="6.984" cy="18" r="2"/>
+            <circle fill="#343434" cx="15.984" cy="18" r="2"/>
+            <path fill="#343434" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+            	L17.372,13z"/>
             </svg>
-            Пусто</a></li>
+            2 товара</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -117,30 +117,63 @@
       <fieldset class="range-filter">
         <div class="filter__caption">Цена: 100 руб. - 500 руб.</div>
         <div class="range-filter__scale">
-          <div class="range-filter__bar"></div>
+          <div class="range-filter__bar">
+            <div class="range-filter__inside-bar"></div>
+          </div>
+          <div class="range-filter__toggle range-filter--toggle-min"></div>
+          <div class="range-filter__toggle range-filter--toggle-max"></div>
         </div>
-        <div class="range-filter__toggle range-filter--toggle-min"></div>
-        <div class="range-filter__toggle range-filter--toggle-max"></div>
+
       </fieldset>
       <fieldset class="fatness">
         <legend class="filter__caption">Жирность:</legend>
-        <label>
-          <input name="fat-amount" type="radio" value="0">
-          <span>0%</span>
-        </label>
-        <label>
-          <input name="fat-amount" type="radio" value="10">
-          <span>до 10%</span>
-        </label>
-        <label>
-          <input name="fat-amount" type="radio" value="30">
-          <span>до 30%</span>
-        </label>
-        <label>
-          <input name="fat-amount" type="radio" value="31">
-          <span>выше 30%</span>
-        </label>
+        <div class="fatness__radio">
+          <label class="fatness__label">
+            <input class="visually-hidden fatness__input" name="fat-amount" type="radio" value="0">
+            <span class="fatness__span">0%</span>
+          </label>
+          <label class="fatness__label">
+            <input class="visually-hidden fatness__input" name="fat-amount" type="radio" value="10">
+            <span class="fatness__span">до 10%</span>
+          </label>
+          <label class="fatness__label">
+            <input class="visually-hidden fatness__input" name="fat-amount" type="radio" value="30">
+            <span class="fatness__span">до 30%</span>
+          </label>
+          <label class="fatness__label">
+            <input class="visually-hidden fatness__input" name="fat-amount" type="radio" value="31">
+            <span class="fatness__span">выше 30%</span>
+          </label>
+        </div>
       </fieldset>
+    </div>
+    <div class="filter-bot">
+      <fieldset class="filler">
+        <legend class="filter__caption">Наполнители:</legend>
+          <div class="filler__checkbox">
+            <label class="filler__label">
+              <input class="visually-hidden filler__input" name="filler" type="checkbox" value="chocolate">
+              <span class="filler__span">шоколадные</span>
+            </label>
+            <label class="filler__label">
+              <input class="visually-hidden filler__input" name="filler" type="checkbox" value="sugar">
+              <span class="filler__span">сахарные присыпки</span>
+            </label>
+            <label class="filler__label">
+              <input class="visually-hidden filler__input" name="filler" type="checkbox" value="fruit">
+              <span class="filler__span">фрукты</span>
+            </label>
+            <label class="filler__label">
+              <input class="visually-hidden filler__input" name="filler" type="checkbox" value="syrups">
+              <span class="filler__span">сиропы</span>
+            </label>
+            <label class="filler__label">
+              <input class="visually-hidden filler__input" name="filler" type="checkbox" value="jams">
+              <span class="filler__span">джемы</span>
+            </label>
+          </div>
+      </fieldset>
+      <button type="submit" class="filter__btn">Применить</button>
     </div>
   </section>
   <section class="products container">
@@ -200,7 +233,130 @@
         <a href="#" class="btn">Быстрый просмотр</a>
       </div>
     </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/1.png" alt="Сливочное с брусничным джемом" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">325&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочное с брусничным джемом</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/2.png" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">410&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочно-черничное с цельными ягодами черники</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/3.png" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">375&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочно-лимонное с карамельной присыпкой</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/4.png" alt="Сливочное с шоколадной стружкой" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">320&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочное с шоколадной стружкой</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/1-1.png" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">440&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочно-ванильное с кусочками шоколада</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/2-1.png" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">435&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочноe с ментоловым сиропом</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/3-1.png" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">355&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочное с кусочками черного шоколада</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
+    <div class="product__item">
+      <div class="item__picture">
+        <img src="img/4-1.png" alt="Сливочное с мятным сиропом" width="267" height="267">
+      </div>
+      <div class="item__price">
+        <span class="item__cost">420&#8381;</span><span class="item__kg">/кг</span>
+      </div>
+      <a href="#" class="item__description">
+        <span>Сливочное с мятным сиропом</span>
+      </a>
+      <div class="item__overlay">
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </div>
+    </div>
   </section>
+  <div class="container">
+    <ul class="pagination">
+      <li class="pagination__item"><a class="pagination__link pagination-prev" href="#"><span class="visually-hidden">на одну влево</span></a></li>
+      <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+      <li class="pagination__item"><a class="pagination__link pagination-next" href="#"><span class="visually-hidden">на одну вправо</span></a></li>
+    </ul>
+  </div>
 
 </main>
 <footer class="main-footer container">
